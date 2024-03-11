@@ -1,7 +1,10 @@
+for .cpp file:
+// File: hello.cpp
 #include <iostream>
+using namespace std;
 
-int main()
+int main(void)
 {
-    std::cout << "Hello, world!" << std::endl;
+    cout << "Hello\n";
     return 0;
 }
