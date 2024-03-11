@@ -14,8 +14,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    // Execute the compiled output file
-                    sh './output'
+                    // Intentional error: trying to execute a non-existent script
+                    sh './non_existent_script.sh'
                 }
             }
         }
@@ -31,7 +31,5 @@ pipeline {
     post {
         always {
             // Display 'pipeline failed' in case of any errors within the pipeline
-            echo 'Pipeline finished'
-        }
-    }
-}
+            echo 'Pipeline failed'
+        }
