@@ -5,7 +5,7 @@ pipeline {
 //      steps {
 //        checkout ([$class: 'GitSCM', 
 //        branches: [[name: '*/main']], 
-//        userRemoteConfigs: [[url: 'https://github.com/Shashank6273/PES2UG21CS410_Jenkins']]})
+//        userRemoteConfigs: [[url: 'https://github.com/Rev-x/pes2ug21cs624_jenkins_']]})
 //        }
 //   }
       stage( 'Build') {
@@ -28,6 +28,6 @@ pipeline {
   post{
     failure{
       error 'Pipeline failed'
-    }
-  }
+    }
+  }
 }
