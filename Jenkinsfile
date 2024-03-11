@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Intentional error: trying to execute a non-existent script
-                    sh './non_existent_script.sh'
+                    sh './output'
                 }
             }
         }
